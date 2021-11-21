@@ -9,6 +9,10 @@
 
     <string name="main_welcome_text">Welcome to RealNum, USERNAME</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="toast_button_text">Toast</string>
-    <string name="random_button_text">Random</string>
+    <string name="button_reminder_text">Reminder</string>
+    <string name="button_tracking_text">Tracking</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="button_overview_text">Overview</string>
+    <string name="button_profile_text">Profile</string>
+    <string name="button_log_out_text">Log out</string>
 </resources>
