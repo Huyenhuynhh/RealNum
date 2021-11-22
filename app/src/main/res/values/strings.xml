@@ -1,18 +1,4 @@
 <resources>
     <string name="app_name">RealNum</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-
-    <string name="previous">Previous</string>
-
-    <string name="main_welcome_text">Welcome to RealNum, USERNAME</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="button_reminder_text">Reminder</string>
-    <string name="button_tracking_text">Tracking</string>
-    <string name="profile_image">Profile Image</string>
-    <string name="button_overview_text">Overview</string>
-    <string name="button_profile_text">Profile</string>
-    <string name="button_log_out_text">Log out</string>
+    <string name="login_text">Already have an Account?<b>Login</b></string>
 </resources>
