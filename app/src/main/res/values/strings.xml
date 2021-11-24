@@ -10,4 +10,8 @@
     <string name="button_overview_text">Overview</string>
     <string name="button_profile_text">Profile</string>
     <string name="button_log_out_text">Log Out</string>
+    <string name="d">D</string>
+    <string name="w">W</string>
+    <string name="m">M</string>
+    <string name="blood_pressure">Blood Pressure</string>
 </resources>
