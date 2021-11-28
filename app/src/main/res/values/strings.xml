@@ -1,4 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">RealNum</string>
     <string name="login_text">Already have an Account?<b>Login</b></string>
+    <string name="app_title">RealNum</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="main_welcome_text">Welcome to RealNum,\n USER</string>
+    <string name="button_tracking_text">Tracking</string>
+    <string name="button_reminder_text">Reminder</string>
+    <string name="button_overview_text">Overview</string>
+    <string name="button_profile_text">Profile</string>
+    <string name="button_log_out_text">Log Out</string>
+    <string name="d">D</string>
+    <string name="w">W</string>
+    <string name="m">M</string>
+    <string name="blood_pressure">Blood Pressure</string>
 </resources>
