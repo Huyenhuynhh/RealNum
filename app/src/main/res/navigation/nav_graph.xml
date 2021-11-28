@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signUpActivity">
 
+
+    <fragment android:id="@+id/trackingplaceholder" />
+    <fragment android:id="@+id/reminderplaceholder" />
+    <fragment android:id="@+id/overviewplaceholder" />
+    <fragment android:id="@+id/profileplaceholder" />
+    <fragment
+        android:id="@+id/welcomeActivity"
+        android:name="com.example.login.WelcomeActivity"
+        android:label="activity_welcome_activity"
+        tools:layout="@layout/activity_welcome"
+        >
+        <action
+            android:id="@+id/action_welcomeActivity_to_trackingplaceholder"
+            app:destination="@id/trackingplaceholder" />
+        <action
+            android:id="@+id/action_welcomeActivity_to_reminderplaceholder"
+            app:destination="@id/reminderplaceholder" />
+        <action
+            android:id="@+id/action_welcomeActivity_to_overviewplaceholder"
+            app:destination="@id/overviewplaceholder" />
+        <action
+            android:id="@+id/action_welcomeActivity_to_profileplaceholder"
+            app:destination="@id/profileplaceholder" />
+        <action
+            android:id="@+id/action_welcomeActivity_to_signUpActivity"
+            app:destination="@id/signUpActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/signUpActivity"
+        android:name="com.example.login.SignUpActivity"
+        android:label="activity_sign_up"
+        tools:layout="@layout/activity_sign_up" />
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.example.login.SplashActivity"
+        android:label="activity_sign_up"
+        tools:layout="@layout/activity_splash" />
 </navigation>
