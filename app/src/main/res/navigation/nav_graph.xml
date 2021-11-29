@@ -6,7 +6,12 @@
     app:startDestination="@id/signUpActivity">
 
 
-    <fragment android:id="@+id/trackingplaceholder" />
+    <fragment
+        android:id="@+id/trackingActivity"
+        android:name="com.example.login.TrackingActivity"
+        android:label="activity_tracking_activity"
+        tools:layout="@layout/activity_tracking"
+        />
     <fragment android:id="@+id/reminderplaceholder" />
     <fragment android:id="@+id/overviewplaceholder" />
     <fragment android:id="@+id/profileplaceholder" />
@@ -17,8 +22,8 @@
         tools:layout="@layout/activity_welcome"
         >
         <action
-            android:id="@+id/action_welcomeActivity_to_trackingplaceholder"
-            app:destination="@id/trackingplaceholder" />
+            android:id="@+id/action_welcomeActivity_to_trackingActivity"
+            app:destination="@id/trackingActivity" />
         <action
             android:id="@+id/action_welcomeActivity_to_reminderplaceholder"
             app:destination="@id/reminderplaceholder" />
