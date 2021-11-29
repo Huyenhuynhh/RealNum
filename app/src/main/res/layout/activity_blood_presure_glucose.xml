@@ -157,16 +157,17 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/addbtn"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
+            android:background="@drawable/text_bg"
             android:text="Add"
             android:textAllCaps="false"
-            android:textSize="16sp"
-            app:backgroundTint="#6e8d9f"
-            android:background="@drawable/text_bg"
             android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:backgroundTint="#6e8d9f"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -177,8 +178,20 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:text="There is no data to display"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
