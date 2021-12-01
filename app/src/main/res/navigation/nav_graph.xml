@@ -18,7 +18,7 @@
             android:id="@+id/action_WelcomeFragment_to_reminder_placeholder"
             app:destination="@id/reminder_placeholder" />
         <action
-            android:id="@+id/action_WelcomeFragment_to_placeholder2"
+            android:id="@+id/action_WelcomeFragment_to_overview_placeholder"
             app:destination="@id/overview_placeholder" />
         <action
             android:id="@+id/action_WelcomeFragment_to_profile_placeholder"

@@ -38,11 +38,27 @@ public class WelcomeFragment extends Fragment {
 
         });
 
-        binding.buttonLogout.setOnClickListener(new View.OnClickListener() {
+        binding.buttonReminder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(WelcomeFragment.this)
                         .navigate(R.id.action_WelcomeFragment_to_reminder_placeholder);
+            }
+        });
+
+        binding.buttonOverview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(WelcomeFragment.this)
+                        .navigate(R.id.action_WelcomeFragment_to_overview_placeholder);
+            }
+        });
+
+        binding.buttonProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(WelcomeFragment.this)
+                        .navigate(R.id.action_WelcomeFragment_to_profile_placeholder);
             }
         });
 
