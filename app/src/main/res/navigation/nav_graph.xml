@@ -3,48 +3,57 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/signUpActivity">
-
+    app:startDestination="@id/WelcomeFragment">
 
     <fragment
-        android:id="@+id/trackingActivity"
-        android:name="com.example.login.TrackingActivity"
-        android:label="activity_tracking_activity"
-        tools:layout="@layout/activity_tracking"
-        />
-    <fragment android:id="@+id/reminderplaceholder" />
-    <fragment android:id="@+id/overviewplaceholder" />
-    <fragment android:id="@+id/profileplaceholder" />
-    <fragment
-        android:id="@+id/welcomeActivity"
-        android:name="com.example.login.WelcomeActivity"
-        android:label="activity_welcome_activity"
-        tools:layout="@layout/activity_welcome"
-        >
+        android:id="@+id/WelcomeFragment"
+        android:name="com.example.login.WelcomeFragment"
+        android:label="@string/welcome_fragment_label"
+        tools:layout="@layout/fragment_welcome">
+
         <action
-            android:id="@+id/action_welcomeActivity_to_trackingActivity"
-            app:destination="@id/trackingActivity" />
+            android:id="@+id/action_WelcomeFragment_to_TrackingActivity"
+            app:destination="@id/TrackingActivity" />
         <action
-            android:id="@+id/action_welcomeActivity_to_reminderplaceholder"
-            app:destination="@id/reminderplaceholder" />
+            android:id="@+id/action_WelcomeFragment_to_reminder_placeholder"
+            app:destination="@id/reminder_placeholder" />
         <action
-            android:id="@+id/action_welcomeActivity_to_overviewplaceholder"
-            app:destination="@id/overviewplaceholder" />
+            android:id="@+id/action_WelcomeFragment_to_placeholder2"
+            app:destination="@id/overview_placeholder" />
         <action
-            android:id="@+id/action_welcomeActivity_to_profileplaceholder"
-            app:destination="@id/profileplaceholder" />
+            android:id="@+id/action_WelcomeFragment_to_profile_placeholder"
+            app:destination="@id/profile_placeholder" />
         <action
-            android:id="@+id/action_welcomeActivity_to_signUpActivity"
+            android:id="@+id/action_WelcomeFragment_to_signUpActivity"
             app:destination="@id/signUpActivity" />
+
     </fragment>
+
+    <activity
+        android:id="@+id/TrackingActivity"
+        android:name="com.example.login.TrackingActivity"
+        android:label="@string/tracking_activity"
+        tools:layout="@layout/activity_tracking">
+
+    </activity>
+
     <activity
         android:id="@+id/signUpActivity"
         android:name="com.example.login.SignUpActivity"
-        android:label="activity_sign_up"
-        tools:layout="@layout/activity_sign_up" />
+        android:label="@string/signup_activity_label"
+        tools:layout="@layout/activity_tracking">
+
+    </activity>
+
     <activity
         android:id="@+id/splashActivity"
         android:name="com.example.login.SplashActivity"
-        android:label="activity_sign_up"
-        tools:layout="@layout/activity_splash" />
+        android:label="@string/splash_activity_label"
+        tools:layout="@layout/activity_splash">
+
+    </activity>
+    <fragment android:id="@+id/reminder_placeholder" />
+    <fragment android:id="@+id/overview_placeholder" />
+    <fragment android:id="@+id/profile_placeholder" />
+
 </navigation>

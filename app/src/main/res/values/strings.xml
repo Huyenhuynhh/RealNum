@@ -16,4 +16,8 @@
     <string name="blood_pressure">Blood Pressure</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_fragment_label">Welcome Fragment</string>
+    <string name="signup_activity_label">Sign Up Activity</string>
+    <string name="tracking_activity">Tracking Activity</string>
+    <string name="splash_activity_label">Splash Activity</string>
 </resources>
