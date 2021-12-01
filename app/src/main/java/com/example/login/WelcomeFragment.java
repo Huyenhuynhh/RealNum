@@ -42,6 +42,14 @@ public class WelcomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(WelcomeFragment.this)
+                        .navigate(R.id.action_WelcomeFragment_to_reminder_placeholder);
+            }
+        });
+
+        binding.buttonLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(WelcomeFragment.this)
                         .navigate(R.id.action_WelcomeFragment_to_signUpActivity);
             }
         });

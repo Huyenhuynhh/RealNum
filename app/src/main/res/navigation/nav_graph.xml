@@ -41,7 +41,7 @@
         android:id="@+id/signUpActivity"
         android:name="com.example.login.SignUpActivity"
         android:label="@string/signup_activity_label"
-        tools:layout="@layout/activity_tracking">
+        tools:layout="@layout/activity_sign_up">
 
     </activity>
 
