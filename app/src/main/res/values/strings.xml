@@ -20,4 +20,6 @@
     <string name="signup_activity_label">Sign Up Activity</string>
     <string name="tracking_activity">Tracking Activity</string>
     <string name="splash_activity_label">Splash Activity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+
 </resources>

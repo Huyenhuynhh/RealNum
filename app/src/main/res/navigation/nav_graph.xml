@@ -21,8 +21,8 @@
             android:id="@+id/action_WelcomeFragment_to_overview_placeholder"
             app:destination="@id/overview_placeholder" />
         <action
-            android:id="@+id/action_WelcomeFragment_to_profile_placeholder"
-            app:destination="@id/profile_placeholder" />
+            android:id="@+id/action_WelcomeFragment_to_ProfileActivity"
+            app:destination="@id/ProfileActivity" />
         <action
             android:id="@+id/action_WelcomeFragment_to_signUpActivity"
             app:destination="@id/signUpActivity" />
@@ -54,6 +54,11 @@
     </activity>
     <fragment android:id="@+id/reminder_placeholder" />
     <fragment android:id="@+id/overview_placeholder" />
-    <fragment android:id="@+id/profile_placeholder" />
+    <activity
+        android:id="@+id/ProfileActivity"
+        android:name="com.example.login.ProfileActivity"
+        android:label="@string/profile_activity_label"
+        tools:layout="@layout/activity_profile">
+    </activity>
 
 </navigation>
