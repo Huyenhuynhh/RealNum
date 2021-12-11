@@ -21,5 +21,11 @@
     <string name="tracking_activity">Tracking Activity</string>
     <string name="splash_activity_label">Splash Activity</string>
     <string name="title_activity_profile">ProfileActivity</string>
+    <string name="user_name">USERNAME</string>
+    <string name="button_change_user_name">Change or Edit Name</string>
+    <string name="button_change_password">Change Password</string>
+    <string name="button_delete_account">Delete Account</string>
+    <string name="user_height">USERHEIGHT</string>
+    <string name="button_change_user_height">Change Height</string>
 
 </resources>
