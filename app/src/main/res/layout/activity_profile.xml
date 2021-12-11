@@ -57,7 +57,6 @@
         android:textColor="@color/black"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_change_user_name" />
 
@@ -76,6 +75,7 @@
         android:id="@+id/button_change_password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="@string/button_change_password"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -85,14 +85,31 @@
         app:layout_constraintTop_toBottomOf="@+id/button_change_user_height" />
 
     <Button
-        android:id="@+id/button_delete_account"
+        android:id="@+id/button_settings"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/button_delete_account"
+        android:layout_marginTop="40dp"
+        android:text="@string/button_settings"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_change_password" />
+
+    <Button
+        android:id="@+id/button_delete_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/button_delete_account"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_settings" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

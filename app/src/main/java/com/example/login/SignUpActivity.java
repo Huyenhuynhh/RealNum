@@ -13,8 +13,8 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        password=findViewById(R.id.tpassword);
-        email=findViewById(R.id.temail);
+        password=findViewById(R.id.input_password);
+        email=findViewById(R.id.input_email_phone);
     }
 
     public void createAccount(View view) {
