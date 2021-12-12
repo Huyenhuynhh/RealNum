@@ -5,6 +5,15 @@ plugins {
 android {
     compileSdk 31
 
+    dataBinding{
+        enabled=true
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+
     defaultConfig {
         applicationId "com.example.login"
         minSdk 22

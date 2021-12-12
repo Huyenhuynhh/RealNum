@@ -16,4 +16,21 @@
     <string name="blood_pressure">Blood Pressure</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_fragment_label">Welcome Fragment</string>
+    <string name="signup_activity_label">Sign Up Activity</string>
+    <string name="tracking_activity">Tracking Activity</string>
+    <string name="splash_activity_label">Splash Activity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="user_name">USERNAME</string>
+    <string name="button_change_user_name">Change or Edit Name</string>
+    <string name="button_change_password">Change Password</string>
+    <string name="button_delete_account">Delete Account</string>
+    <string name="user_height">USERHEIGHT</string>
+    <string name="button_change_user_height">Change Height</string>
+    <string name="button_settings">Settings</string>
+    <string name="create_account">Create Account</string>
+    <string name="email_address_or_phone_number">Email address or phone number</string>
+    <string name="password">Password</string>
+    <string name="profile_activity_label">Profile Activity</string>
+
 </resources>
