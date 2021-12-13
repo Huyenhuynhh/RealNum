@@ -8,17 +8,19 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SignUpActivity extends AppCompatActivity {
-    EditText email,password;
+    EditText userEmailPhone;
+    EditText password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         password=findViewById(R.id.input_password);
-        email=findViewById(R.id.input_email_phone);
+        userEmailPhone =findViewById(R.id.input_email_phone);
     }
 
     public void createAccount(View view) {
-        if(!(email.getText().toString().equals("")&&password.getText().toString().equals(""))){
+        if(!(userEmailPhone.getText().toString().equals("")&&password.getText().toString().equals(""))){
             startActivity(new Intent(SignUpActivity.this,WelcomeActivity.class));
         }
     }
