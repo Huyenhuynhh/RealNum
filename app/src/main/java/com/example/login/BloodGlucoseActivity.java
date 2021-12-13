@@ -58,7 +58,7 @@ public class BloodGlucoseActivity extends AppCompatActivity implements DatePicke
     public void addBloodGlucoseData(View view) {
 
   database.AddBloodGlucose(new BloodGlucose(_date,_time,tvbloodG.getText().toString(),beforeMealStatus+"",amTimeStatus+""));
-        Toast.makeText(this, "data added", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "blood glucose data added", Toast.LENGTH_SHORT).show();
     }
     public void setAmTime(View view) {
         amTimeStatus=true;

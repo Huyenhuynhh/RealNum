@@ -57,7 +57,7 @@ public class BloodPressureActivity extends AppCompatActivity implements DatePick
 
 
 database.AddBloodPressureData(new BloodPressure(_date,_time,sys.getText().toString(),dia.getText().toString(),pul.getText().toString(),amTimeStatus+""));
-        Toast.makeText(this, "data added", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "blood pressure data added", Toast.LENGTH_SHORT).show();
 
 
     }
