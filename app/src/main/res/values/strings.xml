@@ -32,5 +32,6 @@
     <string name="email_address_or_phone_number">Email address or phone number</string>
     <string name="password">Password</string>
     <string name="profile_activity_label">Profile Activity</string>
+    <string name="reenter_password">Reenter Password</string>
 
 </resources>
