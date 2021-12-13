@@ -16,4 +16,11 @@ public class BloodGlucoseActivity extends AppCompatActivity {
     public void closScreen(View view) {
         finish();
     }
+
+    public void addBloodGlucoseData(View view) {
+    }
+    public void setAmTime(View view) {
+    }
+    public void setPmTime(View view) {
+    }
 }

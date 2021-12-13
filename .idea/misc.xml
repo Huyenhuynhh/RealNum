@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/search12/RealNum/app/src/main/res/drawable/text_am_bg.xml" value="0.27076923076923076" />
+        <entry key="..\:/search12/RealNum/app/src/main/res/drawable/text_bg.xml" value="0.27076923076923076" />
+        <entry key="..\:/search12/RealNum/app/src/main/res/drawable/text_pm_bg.xml" value="0.27076923076923076" />
         <entry key="..\:/search12/RealNum/app/src/main/res/layout/activity_blood_glouse_screen.xml" value="0.19882246376811594" />
-        <entry key="..\:/search12/RealNum/app/src/main/res/layout/activity_blood_glucose.xml" value="0.19882246376811594" />
+        <entry key="..\:/search12/RealNum/app/src/main/res/layout/activity_blood_glucose.xml" value="0.25" />
         <entry key="..\:/search12/RealNum/app/src/main/res/layout/activity_blood_pressure.xml" value="0.19882246376811594" />
         <entry key="..\:/search12/RealNum/app/src/main/res/layout/activity_blood_presure_glucose.xml" value="0.20380434782608695" />
         <entry key="..\:/search12/RealNum/app/src/main/res/layout/activity_glucose.xml" value="0.19882246376811594" />
