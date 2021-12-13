@@ -38,6 +38,12 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+        <activity
+            android:name=".BloodGlucoseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BloodPressureActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

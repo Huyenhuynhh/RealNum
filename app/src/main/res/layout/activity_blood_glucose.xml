@@ -90,8 +90,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
+        <TextView
+            android:id="@+id/tvdate"
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_marginTop="50dp"
@@ -100,6 +100,8 @@
             android:gravity="center"
             android:inputType="textPersonName"
             android:text="DD/MM/YYYY"
+            android:textColor="@color/black"
+            android:onClick="openDateDialog"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView2"
             app:layout_constraintTop_toTopOf="parent" />
@@ -127,20 +129,21 @@
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView4"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+            app:layout_constraintTop_toBottomOf="@+id/tvdate">
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/tvtime"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:textSize="20sp"
+                android:onClick="openTimeDialog"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/button5"
+                android:id="@+id/tvamtime"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginEnd="5dp"
@@ -152,11 +155,11 @@
                 android:background="@drawable/text_am_bg"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/button6"
+                app:layout_constraintEnd_toStartOf="@+id/tvpmtime"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/button6"
+                android:id="@+id/tvpmtime"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginEnd="5dp"
@@ -187,14 +190,15 @@
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/tvbloodg"
             android:layout_width="120dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="47dp"
             android:background="@drawable/border_radius"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="number"
+             android:gravity="center"
             app:layout_constraintStart_toEndOf="@+id/textView16"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
@@ -208,7 +212,7 @@
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+            app:layout_constraintStart_toEndOf="@+id/tvbloodg"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
 
         <LinearLayout
@@ -228,6 +232,8 @@
                 android:gravity="center"
                 android:layout_weight="1"
                 android:paddingLeft="10dp"
+                android:background="@drawable/border_radius1"
+                android:onClick="beforeMealClicked"
                 android:drawableLeft="@drawable/ic_baseline_circle_24"
                 android:textColor="@color/black"
                 android:text="Before Meal" />
@@ -238,6 +244,8 @@
                 android:gravity="center"
                 android:layout_weight="1"
                 android:paddingLeft="10dp"
+                android:onClick="afterMealClicked"
+                android:background="@drawable/border_radius1"
                 android:drawableLeft="@drawable/ic_baseline_circle"
                 android:textColor="@color/black"
                 android:text="After Meal" />

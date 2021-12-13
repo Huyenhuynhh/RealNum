@@ -2,13 +2,18 @@ package com.example.login.Model;
 
 public class BloodPressure {
 
-    String date,time,sys,dia,pul;
-    public  BloodPressure(String date, String time, String sys, String dia, String pul){
+    String date,time,sys,dia,pul,timestatus;
+    public  BloodPressure(String date, String time, String sys, String dia, String pul ,String timestatus){
       this.time=time;
       this.date=date;
       this.sys=sys;
       this.pul=pul;
       this.dia=dia;
+        this.timestatus=timestatus;
+    }
+
+    public String getTimestatus() {
+        return timestatus;
     }
 
     public String getDate() {

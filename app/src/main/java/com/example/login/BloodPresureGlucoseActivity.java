@@ -1,5 +1,6 @@
 package com.example.login;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -79,5 +80,14 @@ public class BloodPresureGlucoseActivity extends AppCompatActivity {
         datatext.setVisibility(View.GONE);
         listview.setAdapter(mothAdapter);
         listview.setVisibility(View.VISIBLE);
+    }
+
+    public void openBloodPressureGlucoseScreen(View view) {
+        if(getIntent().getStringExtra("title").equals("Blood Pressure")){
+            startActivity(new Intent(this,BloodPressureActivity.class));
+        }else{
+            startActivity(new Intent(this,BloodGlucoseActivity.class));
+        }
+
     }
 }

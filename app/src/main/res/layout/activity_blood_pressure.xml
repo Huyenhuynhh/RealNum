@@ -98,6 +98,7 @@
             android:background="@drawable/border_radius"
             android:ems="10"
             android:gravity="center"
+            android:onClick="openDateDialog"
             android:textColor="@color/black"
             android:inputType="textPersonName"
             android:text="DD/MM/YYYY"
@@ -132,10 +133,11 @@
 
             <TextView
                 android:id="@+id/tftime"
-                android:layout_width="130dp"
+                android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:textSize="20sp"
+                android:onClick="openTimeDialog"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

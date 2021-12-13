@@ -24,6 +24,7 @@ public class DataBaseService extends SQLiteOpenHelper {
     public static final String Col_6 = "Id";
     public static final String Col_7 = "bloodglucose";
     public static final String Col_8 = "mealtime";
+    public static final String Col_9 = "timestatus";
 
     public DataBaseService(Context context) {
         super(context, DBName, null, 1);
@@ -31,9 +32,9 @@ public class DataBaseService extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(" create table " + TName + "(" + Col_1 + " TEXT," + Col_2 + " TEXT," + Col_7 + " TEXT," + Col_8 + " TEXT,"  + Col_6 + " INTEGER PRIMARY KEY)");
+        db.execSQL(" create table " + TName + "(" + Col_1 + " TEXT," + Col_2 + " TEXT," + Col_7 + " TEXT," + Col_8 + " TEXT,"  + Col_9 + " TEXT," + Col_6 + " INTEGER PRIMARY KEY)");
 
-        db.execSQL(" create table " + TName2 + "(" + Col_1 + " TEXT," + Col_2 + " TEXT," + Col_3 + " TEXT," + Col_4 + " TEXT," + Col_5 + " TEXT," + Col_6 + " INTEGER PRIMARY KEY)");
+        db.execSQL(" create table " + TName2 + "(" + Col_1 + " TEXT," + Col_2 + " TEXT," + Col_3 + " TEXT," + Col_4 + " TEXT," + Col_5 + " TEXT,"  + Col_9 + " TEXT,"+ Col_6 + " INTEGER PRIMARY KEY)");
     }
 
     @Override
@@ -51,16 +52,18 @@ public class DataBaseService extends SQLiteOpenHelper {
         cv.put(Col_3, bloodPressure.getSys());
         cv.put(Col_4, bloodPressure.getDia());
         cv.put(Col_5, bloodPressure.getPul());
+        cv.put(Col_5, bloodPressure.getTimestatus());
         db.insert(TName, null, cv);
         db.close();
     }
-    public void BloodGlucose(BloodGlucose bloodGlucose) {
+    public void AddBloodGlucose(BloodGlucose bloodGlucose) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put(Col_1, bloodGlucose.getDate());
         cv.put(Col_2, bloodGlucose.getTime());
         cv.put(Col_3, bloodGlucose.getBloodg());
         cv.put(Col_4, bloodGlucose.getMealtime());
+        cv.put(Col_5, bloodGlucose.getTimestatus());
         db.insert(TName, null, cv);
         db.close();
     }
@@ -73,7 +76,7 @@ public class DataBaseService extends SQLiteOpenHelper {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             String a = cursor.getString(0);
-            BloodGlucose ca = new BloodGlucose(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3));
+            BloodGlucose ca = new BloodGlucose(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3),cursor.getString(4));
             dataList.add(ca);
             cursor.moveToNext();
         }
@@ -86,7 +89,7 @@ public class DataBaseService extends SQLiteOpenHelper {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
             String a = cursor.getString(0);
-            BloodPressure ca = new BloodPressure(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3),cursor.getString(4));
+            BloodPressure ca = new BloodPressure(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3),cursor.getString(4),cursor.getString(5));
             dataList.add(ca);
             cursor.moveToNext();
         }
