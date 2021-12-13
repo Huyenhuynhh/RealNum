@@ -2,9 +2,9 @@ name: Android CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ Hyun.huynh_tracking_feature ]
   pull_request:
-    branches: [ master ]
+    branches: [ Hyun.huynh_tracking_feature ]
 
 jobs:
   build:
