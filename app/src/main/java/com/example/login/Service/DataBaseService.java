@@ -52,8 +52,8 @@ public class DataBaseService extends SQLiteOpenHelper {
         cv.put(Col_3, bloodPressure.getSys());
         cv.put(Col_4, bloodPressure.getDia());
         cv.put(Col_5, bloodPressure.getPul());
-        cv.put(Col_5, bloodPressure.getTimestatus());
-        db.insert(TName, null, cv);
+        cv.put(Col_9, bloodPressure.getTimestatus());
+        db.insert(TName2, null, cv);
         db.close();
     }
     public void AddBloodGlucose(BloodGlucose bloodGlucose) {
@@ -61,9 +61,9 @@ public class DataBaseService extends SQLiteOpenHelper {
         ContentValues cv = new ContentValues();
         cv.put(Col_1, bloodGlucose.getDate());
         cv.put(Col_2, bloodGlucose.getTime());
-        cv.put(Col_3, bloodGlucose.getBloodg());
-        cv.put(Col_4, bloodGlucose.getMealtime());
-        cv.put(Col_5, bloodGlucose.getTimestatus());
+        cv.put(Col_7, bloodGlucose.getBloodg());
+        cv.put(Col_8, bloodGlucose.getMealtime());
+        cv.put(Col_9, bloodGlucose.getTimestatus());
         db.insert(TName, null, cv);
         db.close();
     }
@@ -85,10 +85,10 @@ public class DataBaseService extends SQLiteOpenHelper {
     public ArrayList<BloodPressure> getBloodPrusreData() {
         List<BloodPressure> dataList = new ArrayList<BloodPressure>();
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.query(TName, null, null, null, null, null, null);
+        Cursor cursor = db.query(TName2, null, null, null, null, null, null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()) {
-            String a = cursor.getString(0);
+          //  String a = cursor.getString(0);
             BloodPressure ca = new BloodPressure(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3),cursor.getString(4),cursor.getString(5));
             dataList.add(ca);
             cursor.moveToNext();

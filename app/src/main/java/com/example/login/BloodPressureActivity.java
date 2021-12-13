@@ -20,8 +20,8 @@ import java.util.Calendar;
 import java.util.TimeZone;
 
 public class BloodPressureActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
-     EditText date,sys,dia,pul;
-     TextView amTime,pmTime,time;
+     EditText sys,dia,pul;
+     TextView amTime,pmTime,time,date;
     boolean amTimeStatus;
     private int _day;
     private int _month;
