@@ -64,14 +64,14 @@
                 android:id="@+id/avtime"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp" />
+
             <ImageView
+                android:id="@+id/avmealStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="17dp"
-                android:id="@+id/avmealStatus"
-                android:src="@drawable/ic_baseline_circle" />
+                android:textColor="@color/black" />
         </LinearLayout>
 
     </LinearLayout>
