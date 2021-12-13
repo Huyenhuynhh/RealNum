@@ -33,5 +33,7 @@
     <string name="password">Password</string>
     <string name="profile_activity_label">Profile Activity</string>
     <string name="reenter_password">Reenter Password</string>
+    <string name="button_change_profile_image">Change Profile Image</string>
+    <string name="enter_your_name">Enter your name</string>
 
 </resources>
