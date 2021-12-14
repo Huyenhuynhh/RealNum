@@ -63,7 +63,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_create_account" />
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/emailPhone"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginStart="30dp"
@@ -77,7 +77,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
-            android:inputType="textPersonName"
+            android:inputType="phone|textEmailAddress"
             />
         <TextView
             android:id="@+id/text_password"
@@ -91,7 +91,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email" />
+            app:layout_constraintTop_toBottomOf="@+id/emailPhone" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"

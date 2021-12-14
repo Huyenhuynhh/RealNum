@@ -32,13 +32,13 @@
     <string name="email_address_or_phone_number">Email address or phone number</string>
     <string name="password">Password</string>
     <string name="profile_activity_label">Profile Activity</string>
-<<<<<<< HEAD
+
     <string name="reenter_password">Reenter Password</string>
     <string name="button_change_profile_image">Change Profile Image</string>
     <string name="enter_your_name">Enter your name</string>
     <string name="text_button_login">Login</string>
 
-=======
+
     <string name="title_activity_blood_glucose">BloodGlucoseActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -50,6 +50,6 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_glucose">GlucoseActivity</string>
     <string name="title_activity_blood_glouse_screen">BloodGlouseScreen</string>
->>>>>>> 42495caf0e97f41c5ba4e11c484af5838a70e194
+
 
 </resources>
