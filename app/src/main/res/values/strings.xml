@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">RealNum</string>
-    <string name="login_text">Already have an Account?<b>Login</b></string>
+    <string name="login_text">Already have an Account?</string>
     <string name="app_title">RealNum</string>
     <string name="profile_image">Profile Image</string>
     <string name="main_welcome_text">Welcome to RealNum,\n USER</string>
@@ -35,5 +35,7 @@
     <string name="reenter_password">Reenter Password</string>
     <string name="button_change_profile_image">Change Profile Image</string>
     <string name="enter_your_name">Enter your name</string>
+    <string name="text_button_login">Login</string>
+
 
 </resources>
