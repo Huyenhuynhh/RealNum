@@ -113,6 +113,7 @@ public class BloodPresureGlucoseActivity extends AppCompatActivity {
         addbtn.setVisibility(View.VISIBLE);
         datatext.setVisibility(View.VISIBLE);
         listview.setVisibility(View.GONE);
+        bloodRecylerview.setVisibility(View.GONE);
     }
 
     public void weekTextClicked(View view) {
@@ -123,6 +124,7 @@ public class BloodPresureGlucoseActivity extends AppCompatActivity {
         datatext.setVisibility(View.GONE);
         listview.setAdapter(weekAdapter);
         listview.setVisibility(View.VISIBLE);
+        bloodRecylerview.setVisibility(View.GONE);
     }
 
     public void mothTextClicked(View view) {
