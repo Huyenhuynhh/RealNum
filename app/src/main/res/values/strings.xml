@@ -50,6 +50,7 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_glucose">GlucoseActivity</string>
     <string name="title_activity_blood_glouse_screen">BloodGlouseScreen</string>
+    <string name="login_activity_label">Login Activity</string>
 
 
 </resources>

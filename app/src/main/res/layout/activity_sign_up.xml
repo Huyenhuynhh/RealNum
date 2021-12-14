@@ -61,7 +61,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_email_phone"
-        android:inputType="phone|textEmailAddress" />
+        android:inputType="textEmailAddress" />
 
     <TextView
         android:id="@+id/text_password"
@@ -170,7 +170,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/btn_bg"
-        android:onClick="moveToLoginScreen"
         android:text="@string/text_button_login"
         android:textColor="@color/white"
         android:textAllCaps="false"

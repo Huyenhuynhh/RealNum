@@ -39,8 +39,25 @@ public class DBHelper extends SQLiteOpenHelper {
             return false;
         else
             return true;
-
     }
+
+//    public String getUsername() {
+//        String user = "";
+//        SQLiteDatabase realNumDB = this.getWritableDatabase();
+//
+//        Cursor cursor;
+//        cursor = realNumDB.query("realNumProfiles", new String[]{"username"}, null,
+//                null, null, null, null);
+//        if (cursor.moveToFirst()) {
+//            do {
+//                user = cursor.getString(1);
+//            }
+//            while (cursor.moveToNext());
+//        }
+//        cursor.close();
+//        return user;
+//    }
+
 
     public Boolean checkUserEmailPhone(String userEmailPhone) {
         SQLiteDatabase realNumDB = this.getWritableDatabase();

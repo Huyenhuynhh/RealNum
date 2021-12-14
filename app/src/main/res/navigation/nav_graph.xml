@@ -25,7 +25,7 @@
             app:destination="@id/ProfileActivity" />
         <action
             android:id="@+id/action_WelcomeFragment_to_signUpActivity"
-            app:destination="@id/signUpActivity" />
+            app:destination="@id/loginActivity" />
 
     </fragment>
 
@@ -52,6 +52,15 @@
         tools:layout="@layout/activity_splash">
 
     </activity>
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.login.LoginActivity"
+        android:label="@string/login_activity_label"
+        tools:layout="@layout/activity_login">
+
+    </activity>
+
     <fragment android:id="@+id/reminder_placeholder" />
     <fragment android:id="@+id/overview_placeholder" />
     <activity
